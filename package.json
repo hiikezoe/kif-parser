@@ -1,0 +1,11 @@
+{
+  "name": "kif-parser",
+  "version": "0.0.0",
+  "description": "A KIF parser for Javascript",
+  "author": "Hiroyuki Ikezoe <hiikezoe@gnome.org>",
+  "license": "GPLv3",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-jasmine": "^1.0.1"
+  }
+}
