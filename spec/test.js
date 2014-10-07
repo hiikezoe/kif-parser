@@ -53,6 +53,7 @@ describe('parse_a_move_line', function() {
         from: { x: 6, y: 9 },
         to: { x: 7, y: 8 },
       },
+      move_string: "７八銀(69)",
       expended_time: " 0:00/00:00:00",
     }).toEqual(parser.parse_a_move_line('   3 ７八銀(69)   ( 0:00/00:00:00)'));
   });
@@ -65,6 +66,7 @@ describe('parse_a_move_line', function() {
         from: { x: 1, y: 2 },
         aux: '成',
       },
+      move_string: "４二飛成(12)",
       expended_time: " 0:00/00:00:00",
     }).toEqual(parser.parse_a_move_line(' 151 ４二飛成(12) ( 0:00/00:00:00)'));
   });
@@ -76,6 +78,7 @@ describe('parse_a_move_line', function() {
         to: { x: 1, y: 2 },
         aux: '打',
       },
+      move_string: "１二飛打",
       expended_time: " 0:00/00:00:00",
     }).toEqual(parser.parse_a_move_line(' 149 １二飛打     ( 0:00/00:00:00)'));
   });
@@ -86,6 +89,7 @@ describe('parse_a_move_line', function() {
         piece: '銀',
         from: { x: 6, y: 9 },
       },
+      move_string: "同　銀(69)",
       expended_time: " 0:00/00:00:00",
     }).toEqual(parser.parse_a_move_line('  11 同　銀(69)   ( 0:00/00:00:00)'));
   });
@@ -93,6 +97,7 @@ describe('parse_a_move_line', function() {
     expect({
       index: 109,
       move: '投了',
+      move_string: '投了',
       expended_time: " 0:00/00:00:00",
     }).toEqual(parser.parse_a_move_line(' 109 投了         ( 0:00/00:00:00)'));
   });
