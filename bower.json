@@ -1,0 +1,22 @@
+{
+  "name": "kif-parser",
+  "main": "kif-parser.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hiikezoe/kif-parser",
+  "authors": [
+    "Hiroyuki Ikezoe <hiikezoe@gnome.org>"
+  ],
+  "description": "A KIF parser",
+  "keywords": [
+    "shogi"
+  ],
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "gulpfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "spec",
+  ]
+}
